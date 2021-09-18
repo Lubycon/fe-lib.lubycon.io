@@ -94,6 +94,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#clearLocalStorage" class="tsd-kind-icon">clear<wbr>Local<wbr>Storage</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#commaizeNumber" class="tsd-kind-icon">commaize<wbr>Number</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#copyToClipboard" class="tsd-kind-icon">copy<wbr>ToClipboard</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Utils.html#createLocalStorageChangeEvent-1" class="tsd-kind-icon">create<wbr>Local<wbr>Storage<wbr>Change<wbr>Event</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Utils.html#defer" class="tsd-kind-icon">defer</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#delay" class="tsd-kind-icon">delay</a></li>
@@ -104,6 +105,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#isAfterOrEqual" class="tsd-kind-icon">is<wbr>After<wbr>OrEqual</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#isBeforeOrEqual" class="tsd-kind-icon">is<wbr>Before<wbr>OrEqual</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#isBoolean" class="tsd-kind-icon">is<wbr>Boolean</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#isClipboardCommandSupported" class="tsd-kind-icon">is<wbr>Clipboard<wbr>Command<wbr>Supported</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#isClipboardSupported" class="tsd-kind-icon">is<wbr>Clipboard<wbr>Supported</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#isNumber" class="tsd-kind-icon">is<wbr>Number</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#isString" class="tsd-kind-icon">is<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#parseQueryString" class="tsd-kind-icon">parse<wbr>Query<wbr>String</a></li>
@@ -189,6 +192,45 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="copyToClipboard" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> copy<wbr>ToClipboard</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">copy<wbr>ToClipboard<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/utils/src/copyToClipboard/index.ts#L26">utils/src/copyToClipboard/index.ts:26</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>인자로 받은 텍스트를 클립보드에 복사합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">copyToClipboard</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;하이&#039;</span><span style="color: #000000">);</span>
+<span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">result</span><span style="color: #000000">) {</span>
+<span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;클립보드에 복사 성공&#039;</span><span style="color: #000000">);</span>
+<span style="color: #000000">} </span><span style="color: #AF00DB">else</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;클립보드에 복사 실패&#039;</span><span style="color: #000000">);</span>
+<span style="color: #000000">}</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>text: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -572,6 +614,40 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isClipboardCommandSupported" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Clipboard<wbr>Command<wbr>Supported</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Clipboard<wbr>Command<wbr>Supported<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/utils/src/copyToClipboard/index.ts#L11">utils/src/copyToClipboard/index.ts:11</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isClipboardSupported" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Clipboard<wbr>Supported</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Clipboard<wbr>Supported<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/utils/src/copyToClipboard/index.ts#L10">utils/src/copyToClipboard/index.ts:10</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="isNumber" class="tsd-anchor"></a>
 					<h3>is<wbr>Number</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -866,6 +942,9 @@
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Utils.html#commaizeNumber" class="tsd-kind-icon">commaize<wbr>Number</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Utils.html#copyToClipboard" class="tsd-kind-icon">copy<wbr>ToClipboard</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Utils.html#createLocalStorageChangeEvent-1" class="tsd-kind-icon">create<wbr>Local<wbr>Storage<wbr>Change<wbr>Event</a>
 					</li>
@@ -895,6 +974,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Utils.html#isBoolean" class="tsd-kind-icon">is<wbr>Boolean</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Utils.html#isClipboardCommandSupported" class="tsd-kind-icon">is<wbr>Clipboard<wbr>Command<wbr>Supported</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Utils.html#isClipboardSupported" class="tsd-kind-icon">is<wbr>Clipboard<wbr>Supported</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Utils.html#isNumber" class="tsd-kind-icon">is<wbr>Number</a>
