@@ -78,6 +78,7 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/Utils.ArcData.html" class="tsd-kind-icon">Arc<wbr>Data</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter"><a href="../interfaces/Utils.Defer.html" class="tsd-kind-icon">Defer</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter"><a href="../interfaces/Utils.LocalStorageEventPayload.html" class="tsd-kind-icon">Local<wbr>Storage<wbr>Event<wbr>Payload</a></li>
 							</ul>
@@ -100,7 +101,9 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Utils.html#createObjectFromArray" class="tsd-kind-icon">create<wbr>Object<wbr>From<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Utils.html#defer" class="tsd-kind-icon">defer</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#delay" class="tsd-kind-icon">delay</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#getArc" class="tsd-kind-icon">get<wbr>Arc</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Utils.html#getArrayFromCount" class="tsd-kind-icon">get<wbr>Array<wbr>From<wbr>Count</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Utils.html#getCoordsOnCircle" class="tsd-kind-icon">get<wbr>Coords<wbr>OnCircle</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Utils.html#getLocalStorageItem" class="tsd-kind-icon">get<wbr>Local<wbr>Storage<wbr>Item</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Utils.html#getObjectKeys" class="tsd-kind-icon">get<wbr>Object<wbr>Keys</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Utils.html#is" class="tsd-kind-icon">is</a></li>
@@ -434,6 +437,46 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getArc" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Arc</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Arc<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/Utils.ArcData.html" class="tsd-signature-type" data-tsd-kind="Interface">ArcData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/utils/src/svg/index.ts#L39">utils/src/svg/index.ts:39</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>desc</dt>
+									<dd><p>중심 좌표 (x, y)를 기준으로 degree(θ)만큼 +방향으로 호를 그리는 패스 명령어를 반환합니다.</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-tsx"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">ArcSvg</span><span style="color: #000000"> = () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> (</span>
+<span style="color: #000000">    </span><span style="color: #800000">&lt;svg</span><span style="color: #000000"> </span><span style="color: #FF0000">width</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #098658">100</span><span style="color: #0000FF">}</span><span style="color: #000000"> </span><span style="color: #FF0000">height</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #098658">100</span><span style="color: #0000FF">}</span><span style="color: #800000">&gt;</span>
+<span style="color: #800000">&lt;path</span><span style="color: #000000"> </span><span style="color: #FF0000">d</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #795E26">getArc</span><span style="color: #000000FF">({ </span><span style="color: #001080">x:</span><span style="color: #000000FF"> </span><span style="color: #098658">50</span><span style="color: #000000FF">, </span><span style="color: #001080">y:</span><span style="color: #000000FF"> </span><span style="color: #098658">50</span><span style="color: #000000FF">, </span><span style="color: #001080">radius:</span><span style="color: #000000FF"> </span><span style="color: #098658">50</span><span style="color: #000000FF">, </span><span style="color: #001080">degree:</span><span style="color: #000000FF"> </span><span style="color: #098658">90</span><span style="color: #000000FF"> })</span><span style="color: #0000FF">}</span><span style="color: #000000"> </span><span style="color: #FF0000">fill</span><span style="color: #000000">=</span><span style="color: #A31515">&quot;#000000&quot;</span><span style="color: #000000"> </span><span style="color: #800000">/&gt;</span>
+<span style="color: #800000">&lt;/svg&gt;</span>
+<span style="color: #000000">);</span>
+<span style="color: #000000">}</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>props: <a href="../interfaces/Utils.ArcData.html" class="tsd-signature-type" data-tsd-kind="Interface">ArcData</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<a name="getArrayFromCount" class="tsd-anchor"></a>
 					<h3>get<wbr>Array<wbr>From<wbr>Count</h3>
@@ -492,6 +535,49 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getCoordsOnCircle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Coords<wbr>OnCircle</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Coords<wbr>OnCircle<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><a href="../interfaces/Utils.ArcData.html" class="tsd-signature-type" data-tsd-kind="Interface">ArcData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/utils/src/svg/index.ts#L18">utils/src/svg/index.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>desc</dt>
+									<dd><p>삼각함수를 사용하여 x축으로부터 시계 방향으로 degree(θ)만큼 벌어진 좌표를 구합니다</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #008000">// 중심 좌표가 (0, 0)이고 반지름이 50인 원을 기준으로 90만큼 벌어진 곳의 좌표를 구합니다</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">x</span><span style="color: #000000">, </span><span style="color: #0070C1">y</span><span style="color: #000000"> } = </span><span style="color: #795E26">getCoordsOnCircle</span><span style="color: #000000">({ </span><span style="color: #001080">x:</span><span style="color: #000000"> </span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #001080">y:</span><span style="color: #000000"> </span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #001080">radius:</span><span style="color: #000000"> </span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #001080">degree:</span><span style="color: #000000"> </span><span style="color: #098658">90</span><span style="color: #000000"> }); </span><span style="color: #008000">// { x: 50, y: 100 }</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <a href="../interfaces/Utils.ArcData.html" class="tsd-signature-type" data-tsd-kind="Interface">ArcData</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
@@ -1028,6 +1114,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/Utils.ArcData.html" class="tsd-kind-icon">Arc<wbr>Data</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="../interfaces/Utils.Defer.html" class="tsd-kind-icon">Defer</a>
 					</li>
@@ -1064,8 +1153,14 @@
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Utils.html#delay" class="tsd-kind-icon">delay</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Utils.html#getArc" class="tsd-kind-icon">get<wbr>Arc</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Utils.html#getArrayFromCount" class="tsd-kind-icon">get<wbr>Array<wbr>From<wbr>Count</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Utils.html#getCoordsOnCircle" class="tsd-kind-icon">get<wbr>Coords<wbr>OnCircle</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Utils.html#getLocalStorageItem" class="tsd-kind-icon">get<wbr>Local<wbr>Storage<wbr>Item</a>
