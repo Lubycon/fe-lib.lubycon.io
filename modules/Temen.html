@@ -102,6 +102,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#clone" class="tsd-kind-icon">clone</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#cloneDeep" class="tsd-kind-icon">clone<wbr>Deep</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#commaizeNumber" class="tsd-kind-icon">commaize<wbr>Number</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#compact" class="tsd-kind-icon">compact</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#copyToClipboard" class="tsd-kind-icon">copy<wbr>ToClipboard</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#createFetchInstance" class="tsd-kind-icon">create<wbr>Fetch<wbr>Instance</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#createLocalStorageChangeEvent-1" class="tsd-kind-icon">create<wbr>Local<wbr>Storage<wbr>Change<wbr>Event</a></li>
@@ -466,6 +467,46 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="compact" class="tsd-anchor"></a>
+					<h3>compact</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">compact&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/compact/index.ts#L9">temen/src/compact/index.ts:9</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>배열 내에서 0, &quot;&quot;, undefined, null, NaN과 같은 Falsy 값을 모두 제거합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">compact</span><span style="color: #000000">([</span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #0000FF">false</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;&#039;</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]); </span><span style="color: #008000">// [1, 2, 3]</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -2330,6 +2371,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#commaizeNumber" class="tsd-kind-icon">commaize<wbr>Number</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="Temen.html#compact" class="tsd-kind-icon">compact</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#copyToClipboard" class="tsd-kind-icon">copy<wbr>ToClipboard</a>
