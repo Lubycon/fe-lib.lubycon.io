@@ -110,6 +110,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#createObjectFromArray" class="tsd-kind-icon">create<wbr>Object<wbr>From<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#defer" class="tsd-kind-icon">defer</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#delay" class="tsd-kind-icon">delay</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#differenceWith" class="tsd-kind-icon">difference<wbr>With</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#doDelete" class="tsd-kind-icon">do<wbr>Delete</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#doGet" class="tsd-kind-icon">do<wbr>Get</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#doPatch" class="tsd-kind-icon">do<wbr>Patch</a></li>
@@ -136,6 +137,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isNumber" class="tsd-kind-icon">is<wbr>Number</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isString" class="tsd-kind-icon">is<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#parseQueryString" class="tsd-kind-icon">parse<wbr>Query<wbr>String</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#pick" class="tsd-kind-icon">pick</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#popLocalStorageItem" class="tsd-kind-icon">pop<wbr>Local<wbr>Storage<wbr>Item</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#removeLocalStorageItem" class="tsd-kind-icon">remove<wbr>Local<wbr>Storage<wbr>Item</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#setCookie" class="tsd-kind-icon">set<wbr>Cookie</a></li>
@@ -1027,6 +1029,78 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="differenceWith" class="tsd-anchor"></a>
+					<h3>difference<wbr>With</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">difference<wbr>With&lt;T&gt;<span class="tsd-signature-symbol">(</span>xs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, ys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, comparator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/difference/index.ts#L14">temen/src/difference/index.ts:14</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>두 배열 간의 동일하지 않은 원소를 담은 배열을 반환합니다. 이때 동일 여부는 세 번째 인자인 comparator 함수로 판단합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">differenceWith</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">], [</span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">], (</span><span style="color: #001080">x</span><span style="color: #000000">, </span><span style="color: #001080">y</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">x</span><span style="color: #000000"> === </span><span style="color: #001080">y</span><span style="color: #000000">); </span><span style="color: #008000">// [1]</span>
+<span style="color: #795E26">differenceWith</span><span style="color: #000000">(</span>
+<span style="color: #000000">  [{ </span><span style="color: #001080">info:</span><span style="color: #000000"> { </span><span style="color: #001080">id:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> }, </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;evan&#039;</span><span style="color: #000000"> }, { </span><span style="color: #001080">info:</span><span style="color: #000000"> { </span><span style="color: #001080">id:</span><span style="color: #000000"> </span><span style="color: #098658">2</span><span style="color: #000000"> }, </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;john&#039;</span><span style="color: #000000"> }],</span>
+<span style="color: #000000">  [{ </span><span style="color: #001080">info:</span><span style="color: #000000"> { </span><span style="color: #001080">id:</span><span style="color: #000000"> </span><span style="color: #098658">2</span><span style="color: #000000"> }, </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;john&#039;</span><span style="color: #000000"> }],</span>
+<span style="color: #000000">  (</span><span style="color: #001080">x</span><span style="color: #000000">, </span><span style="color: #001080">y</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">x</span><span style="color: #000000">.</span><span style="color: #001080">info</span><span style="color: #000000">.</span><span style="color: #001080">id</span><span style="color: #000000"> === </span><span style="color: #001080">y</span><span style="color: #000000">.</span><span style="color: #001080">info</span><span style="color: #000000">.</span><span style="color: #001080">id</span>
+<span style="color: #000000">); </span><span style="color: #008000">// [{ info: { id: 1 }, name: &#039;evan&#039; }]</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>xs: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>ys: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>comparator: <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>x: <span class="tsd-signature-type">T</span></h5>
+														</li>
+														<li>
+															<h5>y: <span class="tsd-signature-type">T</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -2087,6 +2161,56 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="pick" class="tsd-anchor"></a>
+					<h3>pick</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">pick&lt;T, K&gt;<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, keys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/pick/index.ts#L12">temen/src/pick/index.ts:12</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>pick object 중에서 원하는 키 값으로 선택한 키로 이루어져있는 개체를 만드는 함수</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #000000"> </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">objectA</span><span style="color: #000000"> = { </span><span style="color: #A31515">&#039;a&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;b&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;2&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;c&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">3</span><span style="color: #000000"> };</span>
+<span style="color: #000000"> </span><span style="color: #795E26">pick</span><span style="color: #000000">(</span><span style="color: #001080">objectA</span><span style="color: #000000">, [</span><span style="color: #A31515">&#039;a&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;c&#039;</span><span style="color: #000000">]); </span><span style="color: #008000">// {&#039;a&#039;:1 ,&#039;c&#039;: 3}</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+								<li>
+									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>(Object): 객체.</p>
+									</div>
+								</li>
+								<li>
+									<h5>keys: <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<a name="popLocalStorageItem" class="tsd-anchor"></a>
 					<h3>pop<wbr>Local<wbr>Storage<wbr>Item</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
@@ -2397,6 +2521,9 @@
 						<a href="Temen.html#delay" class="tsd-kind-icon">delay</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="Temen.html#differenceWith" class="tsd-kind-icon">difference<wbr>With</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#doDelete" class="tsd-kind-icon">do<wbr>Delete</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
@@ -2473,6 +2600,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#parseQueryString" class="tsd-kind-icon">parse<wbr>Query<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="Temen.html#pick" class="tsd-kind-icon">pick</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#popLocalStorageItem" class="tsd-kind-icon">pop<wbr>Local<wbr>Storage<wbr>Item</a>
