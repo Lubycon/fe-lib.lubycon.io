@@ -101,6 +101,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#clearLocalStorage" class="tsd-kind-icon">clear<wbr>Local<wbr>Storage</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#clone" class="tsd-kind-icon">clone</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#cloneDeep" class="tsd-kind-icon">clone<wbr>Deep</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#cloneWith" class="tsd-kind-icon">clone<wbr>With</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#commaizeNumber" class="tsd-kind-icon">commaize<wbr>Number</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#compact" class="tsd-kind-icon">compact</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#copyToClipboard" class="tsd-kind-icon">copy<wbr>ToClipboard</a></li>
@@ -448,6 +449,88 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="cloneWith" class="tsd-anchor"></a>
+					<h3>clone<wbr>With</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">clone<wbr>With&lt;T, R&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, customizer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/cloneWith/index.ts#L28">temen/src/cloneWith/index.ts:28</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>value를 얕은 복사 한다.
+									customizer는 얕은 복사 된 value를 매게변수로 받는다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>cloneDeepWith</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p>function customizer(value) {
+											if (isElement(value)) {
+											return value.cloneNode(false)
+											}
+										}</p>
+										<p>const el = cloneWith(document.body, customizer)</p>
+										<p>console.log(el === document.body)
+											// =&gt; false
+											console.log(el.nodeName)
+											// =&gt; &#39;BODY&#39;
+											console.log(el.childNodes.length)
+										// =&gt; 0</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>R</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>value를 얕은 복사 합니다.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> customizer: <span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">R</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>params: <span class="tsd-signature-type">T</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">R</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">R</span></h4>
+							<p>Returns 얕은 복사 된 value 또는 customizer의 결과 값</p>
 						</li>
 					</ul>
 				</section>
@@ -2808,6 +2891,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#cloneDeep" class="tsd-kind-icon">clone<wbr>Deep</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="Temen.html#cloneWith" class="tsd-kind-icon">clone<wbr>With</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#commaizeNumber" class="tsd-kind-icon">commaize<wbr>Number</a>
