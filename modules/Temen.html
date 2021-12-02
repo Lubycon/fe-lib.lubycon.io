@@ -101,6 +101,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#clearLocalStorage" class="tsd-kind-icon">clear<wbr>Local<wbr>Storage</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#clone" class="tsd-kind-icon">clone</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#cloneDeep" class="tsd-kind-icon">clone<wbr>Deep</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#cloneDeepWith" class="tsd-kind-icon">clone<wbr>Deep<wbr>With</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#cloneWith" class="tsd-kind-icon">clone<wbr>With</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#commaizeNumber" class="tsd-kind-icon">commaize<wbr>Number</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#compact" class="tsd-kind-icon">compact</a></li>
@@ -449,6 +450,91 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="cloneDeepWith" class="tsd-anchor"></a>
+					<h3>clone<wbr>Deep<wbr>With</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">clone<wbr>Deep<wbr>With&lt;T, R&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, customizer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/cloneDeepWith/index.ts#L30">temen/src/cloneDeepWith/index.ts:30</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>value를 깊은 복사 한다.
+									customizer는 깊은복사 된 value를 매게변수로 받는다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>cloneWith</p>
+									</dd>
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">customizer</span><span style="color: #000000">(</span><span style="color: #001080">value</span><span style="color: #000000">) {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #795E26">isElement</span><span style="color: #000000">(</span><span style="color: #001080">value</span><span style="color: #000000">)) {</span>
+<span style="color: #000000">    </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">value</span><span style="color: #000000">.</span><span style="color: #795E26">cloneNode</span><span style="color: #000000">(</span><span style="color: #0000FF">true</span><span style="color: #000000">)</span>
+<span style="color: #000000">  }</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">el</span><span style="color: #000000"> = </span><span style="color: #795E26">cloneDeepWith</span><span style="color: #000000">(</span><span style="color: #001080">document</span><span style="color: #000000">.</span><span style="color: #001080">body</span><span style="color: #000000">, </span><span style="color: #001080">customizer</span><span style="color: #000000">)</span>
+
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">el</span><span style="color: #000000"> === </span><span style="color: #001080">document</span><span style="color: #000000">.</span><span style="color: #001080">body</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; false</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">el</span><span style="color: #000000">.</span><span style="color: #001080">nodeName</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; &#039;BODY&#039;</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">el</span><span style="color: #000000">.</span><span style="color: #001080">childNodes</span><span style="color: #000000">.</span><span style="color: #001080">length</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; 20</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>R</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>value를 깊은 복사 합니다.</p>
+									</div>
+								</li>
+								<li>
+									<h5>customizer: <span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">R</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>params: <span class="tsd-signature-type">T</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">R</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">R</span></h4>
+							<p>Returns 깊은 복사 된 value 또는 customizer의 결과 값</p>
 						</li>
 					</ul>
 				</section>
@@ -2891,6 +2977,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#cloneDeep" class="tsd-kind-icon">clone<wbr>Deep</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="Temen.html#cloneDeepWith" class="tsd-kind-icon">clone<wbr>Deep<wbr>With</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#cloneWith" class="tsd-kind-icon">clone<wbr>With</a>
