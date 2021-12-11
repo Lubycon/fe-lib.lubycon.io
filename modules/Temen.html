@@ -105,6 +105,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#cloneWith" class="tsd-kind-icon">clone<wbr>With</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#commaizeNumber" class="tsd-kind-icon">commaize<wbr>Number</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#compact" class="tsd-kind-icon">compact</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#conformsTo" class="tsd-kind-icon">conforms<wbr>To</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#copyToClipboard" class="tsd-kind-icon">copy<wbr>ToClipboard</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#createFetchInstance" class="tsd-kind-icon">create<wbr>Fetch<wbr>Instance</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#createLocalStorageChangeEvent-1" class="tsd-kind-icon">create<wbr>Local<wbr>Storage<wbr>Change<wbr>Event</a></li>
@@ -153,6 +154,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#setLocalStorageItem" class="tsd-kind-icon">set<wbr>Local<wbr>Storage<wbr>Item</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#sleep" class="tsd-kind-icon">sleep</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#stringifyQueryParams" class="tsd-kind-icon">stringify<wbr>Query<wbr>Params</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#uniq" class="tsd-kind-icon">uniq</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#uniqBy" class="tsd-kind-icon">uniq<wbr>By</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#unzip" class="tsd-kind-icon">unzip</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#zip" class="tsd-kind-icon">zip</a></li>
 							</ul>
@@ -371,13 +374,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/localStorage/index.ts#L84">temen/src/localStorage/index.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/localStorage/index.ts#L94">temen/src/localStorage/index.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>로컬스토리지 내의 모든 데이터를 제거합니다.</p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>browser-toolkit을 사용해주세요.</p>
+										<p>로컬스토리지 내의 모든 데이터를 제거합니다.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
@@ -690,6 +696,63 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="conformsTo" class="tsd-anchor"></a>
+					<h3>conforms<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">conforms<wbr>To&lt;T&gt;<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Conform</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/conformsTo/index.ts#L26">temen/src/conformsTo/index.ts:26</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>&#39;object&#39;가 인라인 함수 &#39;source&#39;와 일치하는지 확인
+									&#39;source&#39;의 프로퍼티와 &#39;object&#39;의 프로퍼티는 일치</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">object</span><span style="color: #000000"> = { </span><span style="color: #A31515">&#039;a&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;b&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">2</span><span style="color: #000000"> }</span>
+
+<span style="color: #795E26">conformsTo</span><span style="color: #000000">(</span><span style="color: #001080">object</span><span style="color: #000000">, { </span><span style="color: #A31515">&#039;b&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000">(</span><span style="color: #001080">n</span><span style="color: #000000">) { </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">n</span><span style="color: #000000"> &gt; </span><span style="color: #098658">1</span><span style="color: #000000"> } })</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">conformsTo</span><span style="color: #000000">(</span><span style="color: #001080">object</span><span style="color: #000000">, { </span><span style="color: #A31515">&#039;b&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000">(</span><span style="color: #001080">n</span><span style="color: #000000">) { </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">n</span><span style="color: #000000"> &gt; </span><span style="color: #098658">2</span><span style="color: #000000"> } })</span>
+<span style="color: #008000">// =&gt; false</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>검사할 오브젝트</p>
+									</div>
+								</li>
+								<li>
+									<h5>source: <span class="tsd-signature-type">Conform</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>오브젝트의 프로퍼티를 검증할 오브젝트</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>&#39;object&#39;가 일치하면 &#39;true&#39;를 반환하고, 그렇지 않으면 &#39;false&#39;를 반환</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="copyToClipboard" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> copy<wbr>ToClipboard</h3>
@@ -700,7 +763,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/copyToClipboard/index.ts#L26">temen/src/copyToClipboard/index.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/copyToClipboard/index.ts#L28">temen/src/copyToClipboard/index.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -708,6 +771,9 @@
 									<p>인자로 받은 텍스트를 클립보드에 복사합니다.</p>
 								</div>
 								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>browser-toolkit을 사용해주세요.</p>
+									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">result</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">copyToClipboard</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;하이&#039;</span><span style="color: #000000">);</span>
 <span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">result</span><span style="color: #000000">) {</span>
@@ -1339,7 +1405,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/fetch/index.ts#L60">temen/src/fetch/index.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/fetch/index.ts#L62">temen/src/fetch/index.ts:62</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1391,7 +1457,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/fetch/index.ts#L44">temen/src/fetch/index.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/fetch/index.ts#L46">temen/src/fetch/index.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1443,7 +1509,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/fetch/index.ts#L52">temen/src/fetch/index.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/fetch/index.ts#L54">temen/src/fetch/index.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1498,7 +1564,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/fetch/index.ts#L48">temen/src/fetch/index.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/fetch/index.ts#L50">temen/src/fetch/index.ts:50</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1553,7 +1619,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/fetch/index.ts#L56">temen/src/fetch/index.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/fetch/index.ts#L58">temen/src/fetch/index.ts:58</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1608,7 +1674,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/fetch/index.ts#L32">temen/src/fetch/index.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/fetch/index.ts#L34">temen/src/fetch/index.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1616,6 +1682,9 @@
 									<p>모든 요청은 response와 함께 요청을 abort 시킬 수 있는 abort 메서드를 반환합니다</p>
 								</div>
 								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>browser-toolkit을 사용해주세요.</p>
+									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">doRequest</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;temen&#039;</span><span style="color: #000000">;</span>
 
@@ -1839,7 +1908,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/cookies/index.ts#L45">temen/src/cookies/index.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/cookies/index.ts#L51">temen/src/cookies/index.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1847,6 +1916,9 @@
 									<p>인자로 주어진 key에 해당하는 쿠키를 가져옵니다. 만약 해당 쿠키가 존재하지 않는 경우 undefined를 반환합니다.</p>
 								</div>
 								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>browser-toolkit을 사용해주세요.</p>
+									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">foo</span><span style="color: #000000"> = </span><span style="color: #795E26">getCookie</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// string | undefined;</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">foo</span><span style="color: #000000"> = </span><span style="color: #795E26">getCookie</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo&#039;</span><span style="color: #000000">, </span><span style="color: #267F99">Number</span><span style="color: #000000">); </span><span style="color: #008000">// number | undefined;</span>
@@ -1872,7 +1944,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/cookies/index.ts#L46">temen/src/cookies/index.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/cookies/index.ts#L52">temen/src/cookies/index.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1922,7 +1994,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/cookies/index.ts#L31">temen/src/cookies/index.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/cookies/index.ts#L35">temen/src/cookies/index.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1930,6 +2002,9 @@
 									<p>전체 쿠키를 가져옵니다. 만약 쿠키가 없는 경우에는 빈 객체를 반환합니다.</p>
 								</div>
 								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>browser-toolkit을 사용해주세요.</p>
+									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">foo</span><span style="color: #000000"> } = </span><span style="color: #795E26">getCookies</span><span style="color: #000000">();</span>
 <span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">foo</span><span style="color: #000000">);</span>
@@ -1994,13 +2069,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/localStorage/index.ts#L41">temen/src/localStorage/index.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/localStorage/index.ts#L45">temen/src/localStorage/index.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>로컬스토리지에서 데이터를 가져옵니다. 만약 만료 시간이 지정된 데이터이고, 만료 시간이 지난 상태라면 null이 반환됩니다.</p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>browser-toolkit을 사용해주세요.</p>
+										<p>로컬스토리지에서 데이터를 가져옵니다. 만약 만료 시간이 지정된 데이터이고, 만료 시간이 지난 상태라면 null이 반환됩니다.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -2707,13 +2785,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/localStorage/index.ts#L74">temen/src/localStorage/index.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/localStorage/index.ts#L82">temen/src/localStorage/index.ts:82</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>로컬스토리지에서 데이터를 가져온 후 해당 데이터를 로컬스토리지에서 제거합니다.</p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>browser-toolkit을 사용해주세요.</p>
+										<p>로컬스토리지에서 데이터를 가져온 후 해당 데이터를 로컬스토리지에서 제거합니다.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -2741,13 +2822,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/localStorage/index.ts#L66">temen/src/localStorage/index.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/localStorage/index.ts#L72">temen/src/localStorage/index.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>로컬스토리지에서 데이터를 제거합니다.</p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>browser-toolkit을 사용해주세요.</p>
+										<p>로컬스토리지에서 데이터를 제거합니다.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -2769,7 +2853,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/cookies/index.ts#L14">temen/src/cookies/index.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/cookies/index.ts#L16">temen/src/cookies/index.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2777,6 +2861,9 @@
 									<p>쿠키에 값을 세팅합니다. expires, path 등의 쿠키 옵션을 사용할 수 있습니다.</p>
 								</div>
 								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>browser-toolkit을 사용해주세요.</p>
+									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-ts"><span style="color: #795E26">setCookie</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo&#039;</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">);</span>
 <span style="color: #795E26">setCookie</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo&#039;</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, { </span><span style="color: #001080">expires:</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(</span><span style="color: #098658">2022</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">15</span><span style="color: #000000">) });</span>
@@ -2816,13 +2903,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/localStorage/index.ts#L28">temen/src/localStorage/index.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/localStorage/index.ts#L30">temen/src/localStorage/index.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>로컬스토리지에 데이터를 저장합니다. 3번째 인자 expiryHour로 데이터의 만료 시간을 지정할 수 있습니다.</p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>browser-toolkit을 사용해주세요.</p>
+										<p>로컬스토리지에 데이터를 저장합니다. 3번째 인자 expiryHour로 데이터의 만료 시간을 지정할 수 있습니다.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
@@ -2914,6 +3004,112 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="uniq" class="tsd-anchor"></a>
+					<h3>uniq</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">uniq&lt;T&gt;<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/uniq/index.ts#L10">temen/src/uniq/index.ts:10</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>인자로 주어진 배열 내의 중복된 원소를 제거합니다. 같은 값을 가진 원소를 걸러내기 때문에 Object와 같은 자료형의 중복은 체크하지 않습니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">uniq</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">5</span><span style="color: #000000">, </span><span style="color: #098658">5</span><span style="color: #000000">, </span><span style="color: #098658">7</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;foo&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;bar&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;bar&#039;</span><span style="color: #000000">]);</span>
+<span style="color: #008000">// [1, 2, 3, 5, 7, &#039;foo&#039;, &#039;bar&#039;]</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>arr: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="uniqBy" class="tsd-anchor"></a>
+					<h3>uniq<wbr>By</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">uniq<wbr>By&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, converter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/uniq/index.ts#L23">temen/src/uniq/index.ts:23</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>두 번째 인자인 converter 함수로 배열의 원소를 매핑한 후, 중복된 원소를 제거합니다. 같은 값을 가진 원소를 걸러내기 때문에 Object와 같은 자료형의 중복은 체크하지 않습니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">uniqBy</span><span style="color: #000000">([</span><span style="color: #098658">1.2</span><span style="color: #000000">, </span><span style="color: #098658">1.5</span><span style="color: #000000">, </span><span style="color: #098658">2.1</span><span style="color: #000000">, </span><span style="color: #098658">3.2</span><span style="color: #000000">, </span><span style="color: #098658">5.7</span><span style="color: #000000">, </span><span style="color: #098658">5.3</span><span style="color: #000000">, </span><span style="color: #098658">7.19</span><span style="color: #000000">], </span><span style="color: #267F99">Math</span><span style="color: #000000">.</span><span style="color: #795E26">floor</span><span style="color: #000000">);</span>
+<span style="color: #008000">// [1, 2, 3, 5, 7]</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>U</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>arr: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>converter: <span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">U</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>item: <span class="tsd-signature-type">T</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -3139,6 +3335,9 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="Browser_toolkit.html">Browser-<wbr>toolkit</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="Logger.html">Logger</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -3204,6 +3403,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#compact" class="tsd-kind-icon">compact</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="Temen.html#conformsTo" class="tsd-kind-icon">conforms<wbr>To</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#copyToClipboard" class="tsd-kind-icon">copy<wbr>ToClipboard</a>
@@ -3348,6 +3550,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#stringifyQueryParams" class="tsd-kind-icon">stringify<wbr>Query<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="Temen.html#uniq" class="tsd-kind-icon">uniq</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="Temen.html#uniqBy" class="tsd-kind-icon">uniq<wbr>By</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#unzip" class="tsd-kind-icon">unzip</a>
