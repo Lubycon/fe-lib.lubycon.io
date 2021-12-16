@@ -96,6 +96,8 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#average" class="tsd-kind-icon">average</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#averageBy" class="tsd-kind-icon">average<wbr>By</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#castArray" class="tsd-kind-icon">cast<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#chunk" class="tsd-kind-icon">chunk</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#clearLocalStorage" class="tsd-kind-icon">clear<wbr>Local<wbr>Storage</a></li>
@@ -107,10 +109,12 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#compact" class="tsd-kind-icon">compact</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#conformsTo" class="tsd-kind-icon">conforms<wbr>To</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#copyToClipboard" class="tsd-kind-icon">copy<wbr>ToClipboard</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#createAverageFilter" class="tsd-kind-icon">create<wbr>Average<wbr>Filter</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#createFetchInstance" class="tsd-kind-icon">create<wbr>Fetch<wbr>Instance</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#createLocalStorageChangeEvent-1" class="tsd-kind-icon">create<wbr>Local<wbr>Storage<wbr>Change<wbr>Event</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#createMapFromArray" class="tsd-kind-icon">create<wbr>Map<wbr>From<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#createObjectFromArray" class="tsd-kind-icon">create<wbr>Object<wbr>From<wbr>Array</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#cumulativeAverage" class="tsd-kind-icon">cumulative<wbr>Average</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#defer" class="tsd-kind-icon">defer</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#delay" class="tsd-kind-icon">delay</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#difference" class="tsd-kind-icon">difference</a></li>
@@ -246,6 +250,104 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="average" class="tsd-anchor"></a>
+					<h3>average</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">average<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/average/index.ts#L11">temen/src/average/index.ts:11</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>인자로 받은 배열 내 원소들의 평균을 구합니다</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">average</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">4</span><span style="color: #000000">]); </span><span style="color: #008000">// 2.5</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="averageBy" class="tsd-anchor"></a>
+					<h3>average<wbr>By</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">average<wbr>By&lt;T&gt;<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, mapper<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/average/index.ts#L26">temen/src/average/index.ts:26</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>인자로 받은 배열을 한번 매핑한 후 평균을 구합니다</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">averageBy</span><span style="color: #000000">(</span>
+<span style="color: #000000">  [{ </span><span style="color: #001080">value:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> }, { </span><span style="color: #001080">value:</span><span style="color: #000000"> </span><span style="color: #098658">2</span><span style="color: #000000"> }, { </span><span style="color: #001080">value:</span><span style="color: #000000"> </span><span style="color: #098658">3</span><span style="color: #000000"> }],</span>
+<span style="color: #000000">  (</span><span style="color: #001080">item</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">item</span><span style="color: #000000">.</span><span style="color: #001080">value</span><span style="color: #000000">,</span>
+<span style="color: #000000">); </span><span style="color: #008000">// 2</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>mapper: <span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>item: <span class="tsd-signature-type">T</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<a name="castArray" class="tsd-anchor"></a>
 					<h3>cast<wbr>Array</h3>
@@ -804,6 +906,58 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="createAverageFilter" class="tsd-anchor"></a>
+					<h3>create<wbr>Average<wbr>Filter</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Average<wbr>Filter<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>newValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/average/index.ts#L71">temen/src/average/index.ts:71</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>이전 평균 값과 새롭게 입력된 값을 토대로 새로운 평균을 계산하는 클로저 필터 함수를 반환하며,
+									이전 평균 값과 현재까지의 데이터 개수는 createAverageFilter 함수 스코프에 자유 변수로 저장됩니다.</p>
+								</div>
+								<p>항상 O(1)의 시간복잡도를 보장하여 평균을 계산하기 때문에, 센서 데이터 등 빠르게 입력된 데이터를 후처리하는 상황에 적합합니다.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">average</span><span style="color: #000000"> = </span><span style="color: #795E26">createAverageFilter</span><span style="color: #000000">();</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #795E26">average</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">)); </span><span style="color: #008000">// 1</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #795E26">average</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">)); </span><span style="color: #008000">// 1.5</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #795E26">average</span><span style="color: #000000">(</span><span style="color: #098658">3</span><span style="color: #000000">)); </span><span style="color: #008000">// 2</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #795E26">average</span><span style="color: #000000">(</span><span style="color: #098658">4</span><span style="color: #000000">)); </span><span style="color: #008000">// 2.5</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>newValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-signature">
+									<ul class="tsd-signatures tsd-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>newValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>newValue: <span class="tsd-signature-type">number</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="createFetchInstance" class="tsd-anchor"></a>
 					<h3>create<wbr>Fetch<wbr>Instance</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -1214,6 +1368,57 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="cumulativeAverage" class="tsd-anchor"></a>
+					<h3>cumulative<wbr>Average</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">cumulative<wbr>Average<span class="tsd-signature-symbol">(</span>prevAverage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, newValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, dataListLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/average/index.ts#L50">temen/src/average/index.ts:50</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>이전 평균 값과 새롭게 입력된 값을 토대로 새로운 평균을 계산하는 평균 필터 알고리즘을 사용하여 값을 계산합니다.</p>
+								</div>
+								<p>항상 O(1)의 시간복잡도를 보장하여 평균을 계산하기 때문에, 센서 데이터 등 빠르게 입력된 데이터를 후처리하는 상황에 적합합니다.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">averageLux</span><span style="color: #000000"> = </span><span style="color: #098658">0</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">calcCount</span><span style="color: #000000"> = </span><span style="color: #098658">0</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">sensor</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">AmbientLightSensor</span><span style="color: #000000">();</span>
+<span style="color: #001080">sensor</span><span style="color: #000000">.</span><span style="color: #795E26">onreading</span><span style="color: #000000"> = () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #001080">calcCount</span><span style="color: #000000">++;</span>
+<span style="color: #000000">  </span><span style="color: #001080">averageLux</span><span style="color: #000000"> = </span><span style="color: #795E26">cumulativeAverage</span><span style="color: #000000">(</span><span style="color: #001080">averageLux</span><span style="color: #000000">, </span><span style="color: #001080">sensor</span><span style="color: #000000">.</span><span style="color: #001080">illuminance</span><span style="color: #000000">, </span><span style="color: #001080">calcCount</span><span style="color: #000000">);</span>
+<span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`지금까지의 평균 조도는 </span><span style="color: #0000FF">${</span><span style="color: #001080">averageLux</span><span style="color: #0000FF">}</span><span style="color: #A31515">lux 입니다`</span><span style="color: #000000">);</span>
+<span style="color: #000000">};</span>
+
+<span style="color: #001080">sensor</span><span style="color: #000000">.</span><span style="color: #795E26">start</span><span style="color: #000000">();</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>prevAverage: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>newValue: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>dataListLength: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -3798,6 +4003,12 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="Temen.html#WithoutRequestBodyOptions" class="tsd-kind-icon">Without<wbr>Request<wbr>Body<wbr>Options</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#average" class="tsd-kind-icon">average</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="Temen.html#averageBy" class="tsd-kind-icon">average<wbr>By</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#castArray" class="tsd-kind-icon">cast<wbr>Array</a>
 					</li>
@@ -3832,6 +4043,9 @@
 						<a href="Temen.html#copyToClipboard" class="tsd-kind-icon">copy<wbr>ToClipboard</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#createAverageFilter" class="tsd-kind-icon">create<wbr>Average<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#createFetchInstance" class="tsd-kind-icon">create<wbr>Fetch<wbr>Instance</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
@@ -3842,6 +4056,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#createObjectFromArray" class="tsd-kind-icon">create<wbr>Object<wbr>From<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#cumulativeAverage" class="tsd-kind-icon">cumulative<wbr>Average</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#defer" class="tsd-kind-icon">defer</a>
