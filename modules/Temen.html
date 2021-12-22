@@ -121,12 +121,17 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#intersectionWith" class="tsd-kind-icon">intersection<wbr>With</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#is" class="tsd-kind-icon">is</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isAfterOrEqual" class="tsd-kind-icon">is<wbr>After<wbr>OrEqual</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isArguments" class="tsd-kind-icon">is<wbr>Arguments</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isArrayBuffer" class="tsd-kind-icon">is<wbr>Array<wbr>Buffer</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isArrayLike" class="tsd-kind-icon">is<wbr>Array<wbr>Like</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isArrayLikeObject" class="tsd-kind-icon">is<wbr>Array<wbr>Like<wbr>Object</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isBeforeOrEqual" class="tsd-kind-icon">is<wbr>Before<wbr>OrEqual</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isBoolean" class="tsd-kind-icon">is<wbr>Boolean</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#isEqual" class="tsd-kind-icon">is<wbr>Equal</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isMap" class="tsd-kind-icon">is<wbr>Map</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isNil" class="tsd-kind-icon">is<wbr>Nil</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isNumber" class="tsd-kind-icon">is<wbr>Number</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isObjectLike" class="tsd-kind-icon">is<wbr>Object<wbr>Like</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isPrimitiveType" class="tsd-kind-icon">is<wbr>Primitive<wbr>Type</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isRegExp" class="tsd-kind-icon">is<wbr>Reg<wbr>Exp</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isSet" class="tsd-kind-icon">is<wbr>Set</a></li>
@@ -1771,6 +1776,169 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isArguments" class="tsd-anchor"></a>
+					<h3>is<wbr>Arguments</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Arguments<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isArguments/index.ts#L19">temen/src/isArguments/index.ts:19</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isArrayBuffer" class="tsd-anchor"></a>
+					<h3>is<wbr>Array<wbr>Buffer</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Array<wbr>Buffer<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">ArrayBuffer</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isArrayBuffer/index.ts#L17">temen/src/isArrayBuffer/index.ts:17</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>value가 ArrayBuffer인지 확인</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #795E26">isArrayBuffer</span><span style="color: #000000">(</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">ArrayBuffer</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">))</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isArrayBuffer</span><span style="color: #000000">(</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Array</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">))</span>
+<span style="color: #008000">// =&gt; false</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>검사할 값</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">ArrayBuffer</span></h4>
+							<p>ArrayBuffer이면 true 반환 아닌 경우 false 반환</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isArrayLike" class="tsd-anchor"></a>
+					<h3>is<wbr>Array<wbr>Like</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Array<wbr>Like<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isArrayLike/index.ts#L25">temen/src/isArrayLike/index.ts:25</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>value가 유사 배열인지 확인.
+										value가 다음과 같은 경우 유사배열으로 간주한다.
+									함수가 아니며 또는 0이상의 value.length를 가진 경우</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #795E26">isArrayLike</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">])</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isArrayLike</span><span style="color: #000000">(</span><span style="color: #001080">document</span><span style="color: #000000">.</span><span style="color: #001080">body</span><span style="color: #000000">.</span><span style="color: #001080">children</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isArrayLike</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;abc&#039;</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isArrayLike</span><span style="color: #000000">(</span><span style="color: #267F99">Function</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; false</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>검사할 값</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>유사 배열이면 true 반환 아닌 경우 false 반환</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isArrayLikeObject" class="tsd-anchor"></a>
+					<h3>is<wbr>Array<wbr>Like<wbr>Object</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Array<wbr>Like<wbr>Object<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isArrayLikeObject/index.ts#L24">temen/src/isArrayLikeObject/index.ts:24</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> value가 object인지 확인 한다는 점을 제외하면 isArrayLike와 동일하다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #795E26">isArrayLikeObject</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">])</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isArrayLikeObject</span><span style="color: #000000">(</span><span style="color: #001080">document</span><span style="color: #000000">.</span><span style="color: #001080">body</span><span style="color: #000000">.</span><span style="color: #001080">children</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isArrayLikeObject</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;abc&#039;</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; false</span>
+
+<span style="color: #795E26">isArrayLikeObject</span><span style="color: #000000">(</span><span style="color: #267F99">Function</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; false</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>검사할 값</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>array-like object이면 true 반환 아닌 경우 false 반환</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="isBeforeOrEqual" class="tsd-anchor"></a>
 					<h3>is<wbr>Before<wbr>OrEqual</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -1993,6 +2161,55 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isObjectLike" class="tsd-anchor"></a>
+					<h3>is<wbr>Object<wbr>Like</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Object<wbr>Like<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isObjectLike/index.ts#L24">temen/src/isObjectLike/index.ts:24</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>value가 object-like인지 확인
+									typeof 결과는 object이다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">isObjectLike</span><span style="color: #000000">({})</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isObjectLike</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">])</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isObjectLike</span><span style="color: #000000">(</span><span style="color: #267F99">Function</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; false</span>
+
+<span style="color: #795E26">isObjectLike</span><span style="color: #000000">(</span><span style="color: #0000FF">null</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; false</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>검사할 값</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>object-like이면 true 반환 아닌 경우 false 반환</p>
 						</li>
 					</ul>
 				</section>
@@ -3087,6 +3304,18 @@
 						<a href="Temen.html#isAfterOrEqual" class="tsd-kind-icon">is<wbr>After<wbr>OrEqual</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isArguments" class="tsd-kind-icon">is<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isArrayBuffer" class="tsd-kind-icon">is<wbr>Array<wbr>Buffer</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isArrayLike" class="tsd-kind-icon">is<wbr>Array<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isArrayLikeObject" class="tsd-kind-icon">is<wbr>Array<wbr>Like<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#isBeforeOrEqual" class="tsd-kind-icon">is<wbr>Before<wbr>OrEqual</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
@@ -3103,6 +3332,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#isNumber" class="tsd-kind-icon">is<wbr>Number</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isObjectLike" class="tsd-kind-icon">is<wbr>Object<wbr>Like</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#isPrimitiveType" class="tsd-kind-icon">is<wbr>Primitive<wbr>Type</a>
