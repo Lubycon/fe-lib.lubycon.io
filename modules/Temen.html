@@ -136,7 +136,12 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isArrayLikeObject" class="tsd-kind-icon">is<wbr>Array<wbr>Like<wbr>Object</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isBeforeOrEqual" class="tsd-kind-icon">is<wbr>Before<wbr>OrEqual</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isBoolean" class="tsd-kind-icon">is<wbr>Boolean</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isDate" class="tsd-kind-icon">is<wbr>Date</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isElement" class="tsd-kind-icon">is<wbr>Element</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#isEqual" class="tsd-kind-icon">is<wbr>Equal</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#isEqualWith" class="tsd-kind-icon">is<wbr>Equal<wbr>With</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isError" class="tsd-kind-icon">is<wbr>Error</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isFunction" class="tsd-kind-icon">is<wbr>Function</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isMap" class="tsd-kind-icon">is<wbr>Map</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isNil" class="tsd-kind-icon">is<wbr>Nil</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isNumber" class="tsd-kind-icon">is<wbr>Number</a></li>
@@ -2201,6 +2206,90 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isDate" class="tsd-anchor"></a>
+					<h3>is<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Date<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isDate/index.ts#L18">temen/src/isDate/index.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>value가 Date인지 확인합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #795E26">isDate</span><span style="color: #000000">(</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isDate</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;2021-12-31&#039;</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; false</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>확인할 값</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Date</span></h4>
+							<p>Returns value가 Date인지 여부</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isElement" class="tsd-anchor"></a>
+					<h3>is<wbr>Element</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Element<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Element</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isElement/index.ts#L17">temen/src/isElement/index.ts:17</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>value가 Element인지 확인합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #795E26">isElement</span><span style="color: #000000">(</span><span style="color: #001080">document</span><span style="color: #000000">.</span><span style="color: #001080">body</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isElement</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;&lt;body&gt;&#039;</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; false</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>확인할 값</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Element</span></h4>
+							<p>Returns value가 Element인지 여부</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<a name="isEqual" class="tsd-anchor"></a>
 					<h3>is<wbr>Equal</h3>
@@ -2248,6 +2337,196 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">a</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="isEqualWith" class="tsd-anchor"></a>
+					<h3>is<wbr>Equal<wbr>With</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Equal<wbr>With&lt;V, O&gt;<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span>, other<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">O</span>, customizer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span>, other<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isEqualWith/index.ts#L33">temen/src/isEqualWith/index.ts:33</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>이 메서드는 <code>isEqual</code>와 동일하지만 <code>customizer</code>를 전달합니다.
+										<code>customizer</code>가 <code>undefined</code>를 반환하면 비교는 메서드에 의해 처리됩니다.
+										<code>customizer</code>는 최대 여섯 개의 인수를 전달합니다.
+									(objValue, othValue [, index|key, object, other, stack])</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">isGreeting</span><span style="color: #000000">(</span><span style="color: #001080">value</span><span style="color: #000000">) {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #811F3F"> /</span><span style="color: #EE0000">^</span><span style="color: #811F3F">h</span><span style="color: #D16969">(?:</span><span style="color: #811F3F">i</span><span style="color: #EE0000">|</span><span style="color: #811F3F">ello</span><span style="color: #D16969">)</span><span style="color: #EE0000">$</span><span style="color: #811F3F">/</span><span style="color: #000000">.</span><span style="color: #795E26">test</span><span style="color: #000000">(</span><span style="color: #001080">value</span><span style="color: #000000">)</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">customizer</span><span style="color: #000000">(</span><span style="color: #001080">objValue</span><span style="color: #000000">, </span><span style="color: #001080">othValue</span><span style="color: #000000">) {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #795E26">isGreeting</span><span style="color: #000000">(</span><span style="color: #001080">objValue</span><span style="color: #000000">) &amp;&amp; </span><span style="color: #795E26">isGreeting</span><span style="color: #000000">(</span><span style="color: #001080">othValue</span><span style="color: #000000">)) {</span>
+<span style="color: #000000">    </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span>
+<span style="color: #000000">  }</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">array</span><span style="color: #000000"> = [</span><span style="color: #A31515">&#039;hello&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;goodbye&#039;</span><span style="color: #000000">]</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">other</span><span style="color: #000000"> = [</span><span style="color: #A31515">&#039;hi&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;goodbye&#039;</span><span style="color: #000000">]</span>
+
+<span style="color: #795E26">isEqualWith</span><span style="color: #000000">(</span><span style="color: #001080">array</span><span style="color: #000000">, </span><span style="color: #001080">other</span><span style="color: #000000">, </span><span style="color: #001080">customizer</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; true</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>V</h4>
+								</li>
+								<li>
+									<h4>O</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">V</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>비교할 값</p>
+									</div>
+								</li>
+								<li>
+									<h5>other: <span class="tsd-signature-type">O</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>value와 비교할 값</p>
+									</div>
+								</li>
+								<li>
+									<h5>customizer: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span>, other<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span>, other<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">O</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <span class="tsd-signature-type">V</span></h5>
+														</li>
+														<li>
+															<h5>other: <span class="tsd-signature-type">O</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Returns value가 other와 동일한지 여부</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isError" class="tsd-anchor"></a>
+					<h3>is<wbr>Error</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Error<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Error</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isError/index.ts#L16">temen/src/isError/index.ts:16</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>value가 <code>Error</code>, <code>EvalError</code>, <code>RangeError</code>, <code>ReferenceError</code>,
+									<code>SyntaxError</code>, <code>TypeError</code>, or <code>URIError</code> 객체인지 확인합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>isError(new Error)
+										// =&gt; true</p>
+										<p>isError(Error)
+										// =&gt; false</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>확인할 값</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Error</span></h4>
+							<p>Returns value가 <code>Error</code> 객체인지 여부</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isFunction" class="tsd-anchor"></a>
+					<h3>is<wbr>Function</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Function<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isFunction/index.ts#L30">temen/src/isFunction/index.ts:30</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if <code>value</code> is classified as a <code>Function</code> object.
+									value가 <code>Function</code> 객체인지 확인합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #795E26">isFunction</span><span style="color: #000000">(</span><span style="color: #0000FF">class</span><span style="color: #000000"> </span><span style="color: #267F99">Any</span><span style="color: #000000">{})</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isFunction</span><span style="color: #000000">(() </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {})</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isFunction</span><span style="color: #000000">(</span><span style="color: #0000FF">async</span><span style="color: #000000"> () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {})</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isFunction</span><span style="color: #000000">(</span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #0000FF">*</span><span style="color: #000000"> </span><span style="color: #795E26">Any</span><span style="color: #000000">() {})</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isFunction</span><span style="color: #000000">(</span><span style="color: #267F99">Math</span><span style="color: #000000">.</span><span style="color: #795E26">round</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isFunction</span><span style="color: #000000">(</span><span style="color: #811F3F">/abc/</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; false</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>확인할 값</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Function</span></h4>
+							<p>Returns value가 <code>Function</code> 객체인지 여부</p>
 						</li>
 					</ul>
 				</section>
@@ -3525,8 +3804,23 @@
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#isBoolean" class="tsd-kind-icon">is<wbr>Boolean</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isDate" class="tsd-kind-icon">is<wbr>Date</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isElement" class="tsd-kind-icon">is<wbr>Element</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#isEqual" class="tsd-kind-icon">is<wbr>Equal</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="Temen.html#isEqualWith" class="tsd-kind-icon">is<wbr>Equal<wbr>With</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isError" class="tsd-kind-icon">is<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isFunction" class="tsd-kind-icon">is<wbr>Function</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#isMap" class="tsd-kind-icon">is<wbr>Map</a>
