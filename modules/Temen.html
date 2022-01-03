@@ -136,6 +136,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isArrayLikeObject" class="tsd-kind-icon">is<wbr>Array<wbr>Like<wbr>Object</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isBeforeOrEqual" class="tsd-kind-icon">is<wbr>Before<wbr>OrEqual</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isBoolean" class="tsd-kind-icon">is<wbr>Boolean</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isBuffer" class="tsd-kind-icon">is<wbr>Buffer</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isDate" class="tsd-kind-icon">is<wbr>Date</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isElement" class="tsd-kind-icon">is<wbr>Element</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#isEqual" class="tsd-kind-icon">is<wbr>Equal</a></li>
@@ -2207,6 +2208,45 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isBuffer" class="tsd-anchor"></a>
+					<h3>is<wbr>Buffer</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Buffer<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Buffer</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isBuffer/index.ts#L16">temen/src/isBuffer/index.ts:16</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>value가 Buffer인지 확인합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #795E26">isBuffer</span><span style="color: #000000">(</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Buffer</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">))</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isBuffer</span><span style="color: #000000">(</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Uint8Array</span><span style="color: #000000">(</span><span style="color: #098658">2</span><span style="color: #000000">))</span>
+<span style="color: #008000">// =&gt; false</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>arg: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Buffer</span></h4>
+							<p>Returns value가 Buffer인지 여부</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="isDate" class="tsd-anchor"></a>
 					<h3>is<wbr>Date</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -3803,6 +3843,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#isBoolean" class="tsd-kind-icon">is<wbr>Boolean</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isBuffer" class="tsd-kind-icon">is<wbr>Buffer</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#isDate" class="tsd-kind-icon">is<wbr>Date</a>
