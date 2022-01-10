@@ -98,6 +98,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#average" class="tsd-kind-icon">average</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#averageBy" class="tsd-kind-icon">average<wbr>By</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#camelCase" class="tsd-kind-icon">camel<wbr>Case</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#castArray" class="tsd-kind-icon">cast<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#chunk" class="tsd-kind-icon">chunk</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#clone" class="tsd-kind-icon">clone</a></li>
@@ -154,19 +155,25 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isSet" class="tsd-kind-icon">is<wbr>Set</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isString" class="tsd-kind-icon">is<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isTypedArray" class="tsd-kind-icon">is<wbr>Typed<wbr>Array</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#lowerFirstLetter" class="tsd-kind-icon">lower<wbr>First<wbr>Letter</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#max" class="tsd-kind-icon">max</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#maxBy" class="tsd-kind-icon">max<wbr>By</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#min" class="tsd-kind-icon">min</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#minBy" class="tsd-kind-icon">min<wbr>By</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#parscalCase" class="tsd-kind-icon">parscal<wbr>Case</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#parseQueryString" class="tsd-kind-icon">parse<wbr>Query<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#pick" class="tsd-kind-icon">pick</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#sleep" class="tsd-kind-icon">sleep</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#stringifyQueryParams" class="tsd-kind-icon">stringify<wbr>Query<wbr>Params</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#sum" class="tsd-kind-icon">sum</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#sumBy" class="tsd-kind-icon">sum<wbr>By</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#trimCharacters" class="tsd-kind-icon">trim<wbr>Characters</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#trimEndCharacters" class="tsd-kind-icon">trim<wbr>End<wbr>Characters</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#trimStartCharacters" class="tsd-kind-icon">trim<wbr>Start<wbr>Characters</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#uniq" class="tsd-kind-icon">uniq</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#uniqBy" class="tsd-kind-icon">uniq<wbr>By</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#unzip" class="tsd-kind-icon">unzip</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#upperFirstLetter" class="tsd-kind-icon">upper<wbr>First<wbr>Letter</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#zip" class="tsd-kind-icon">zip</a></li>
 							</ul>
 						</section>
@@ -390,6 +397,46 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="camelCase" class="tsd-anchor"></a>
+					<h3>camel<wbr>Case</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">camel<wbr>Case<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, splitter<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/camelCase/index.ts#L16">temen/src/camelCase/index.ts:16</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>인자로 받은 문자열을 Camel Case로 변환합니다.</p>
+								</div>
+								<p>splitter 인자에 아무런 값을 주지 않을 경우 공백, -, _ 기준으로 단어를 구분합니다.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">camelCase</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;FooBar&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// fooBar</span>
+<span style="color: #795E26">camelCase</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo-bar&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// fooBar</span>
+<span style="color: #795E26">camelCase</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo&amp;bar&#039;</span><span style="color: #000000">, [</span><span style="color: #A31515">&#039;&amp;&#039;</span><span style="color: #000000">]); </span><span style="color: #008000">// fooBar</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>text: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>splitter: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -2998,6 +3045,40 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="lowerFirstLetter" class="tsd-anchor"></a>
+					<h3>lower<wbr>First<wbr>Letter</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">lower<wbr>First<wbr>Letter<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/convertFirstLetter/index.ts#L11">temen/src/convertFirstLetter/index.ts:11</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>주어진 문자열의 첫 번째 문자를 소문자로 변경합니다</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">lowerFirstLetter</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;FRED&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// fRED</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>text: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="max" class="tsd-anchor"></a>
 					<h3>max</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -3190,6 +3271,46 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="parscalCase" class="tsd-anchor"></a>
+					<h3>parscal<wbr>Case</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">parscal<wbr>Case<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, splitter<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/parscalCase/index.ts#L16">temen/src/parscalCase/index.ts:16</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>인자로 받은 문자열을 Parscal Case로 변환합니다.</p>
+								</div>
+								<p>splitter 인자에 아무런 값을 주지 않을 경우 공백, -, _ 기준으로 단어를 구분합니다.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">parscalCase</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;fooBar&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// FooBar</span>
+<span style="color: #795E26">parscalCase</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo-bar&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// FooBar</span>
+<span style="color: #795E26">parscalCase</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo&amp;bar&#039;</span><span style="color: #000000">, [</span><span style="color: #A31515">&#039;&amp;&#039;</span><span style="color: #000000">]); </span><span style="color: #008000">// FooBar</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>text: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>splitter: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -3446,6 +3567,121 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="trimCharacters" class="tsd-anchor"></a>
+					<h3>trim<wbr>Characters</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">trim<wbr>Characters<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetCharacters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/trimCharacters/index.ts#L41">temen/src/trimCharacters/index.ts:41</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>대상 문자열 중 targetCharacters에 포함되는 문자를 Trim합니다. targetCharacters에 아무런 값을 주지 않는 경우에는 공백을 Trim 합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">trimCharacters</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;   foo    &#039;</span><span style="color: #000000">); </span><span style="color: #008000">// foo</span>
+<span style="color: #795E26">trimCharacters</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;--foo--&#039;</span><span style="color: #000000">, [</span><span style="color: #A31515">&#039;-&#039;</span><span style="color: #000000">]); </span><span style="color: #008000">// foo</span>
+<span style="color: #795E26">trimCharacters</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;--_foo-_-&#039;</span><span style="color: #000000">, [</span><span style="color: #A31515">&#039;-&#039;</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;_&#039;</span><span style="color: #000000">]); </span><span style="color: #008000">// foo</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>text: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>targetCharacters: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="trimEndCharacters" class="tsd-anchor"></a>
+					<h3>trim<wbr>End<wbr>Characters</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">trim<wbr>End<wbr>Characters<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetCharacters<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/trimCharacters/index.ts#L25">temen/src/trimCharacters/index.ts:25</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>대상 문자열 중 targetCharacters에 포함되는 문자를 End Trim합니다. targetCharacters에 아무런 값을 주지 않는 경우에는 공백을 Trim 합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">trimEndCharacters</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo    &#039;</span><span style="color: #000000">); </span><span style="color: #008000">// foo</span>
+<span style="color: #795E26">trimEndCharacters</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;foo--&#039;</span><span style="color: #000000">, [</span><span style="color: #A31515">&#039;-&#039;</span><span style="color: #000000">]); </span><span style="color: #008000">// foo</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>text: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>targetCharacters: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="trimStartCharacters" class="tsd-anchor"></a>
+					<h3>trim<wbr>Start<wbr>Characters</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">trim<wbr>Start<wbr>Characters<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetCharacters<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/trimCharacters/index.ts#L10">temen/src/trimCharacters/index.ts:10</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>대상 문자열 중 targetCharacters에 포함되는 문자를 Start Trim합니다. targetCharacters에 아무런 값을 주지 않는 경우에는 공백을 Trim 합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">trimStartCharacters</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;    foo&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// foo</span>
+<span style="color: #795E26">trimStartCharacters</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;--foo&#039;</span><span style="color: #000000">, [</span><span style="color: #A31515">&#039;-&#039;</span><span style="color: #000000">]); </span><span style="color: #008000">// foo</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>text: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>targetCharacters: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<a name="uniq" class="tsd-anchor"></a>
 					<h3>uniq</h3>
@@ -3594,6 +3830,40 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="upperFirstLetter" class="tsd-anchor"></a>
+					<h3>upper<wbr>First<wbr>Letter</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">upper<wbr>First<wbr>Letter<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/convertFirstLetter/index.ts#L23">temen/src/convertFirstLetter/index.ts:23</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>주어진 문자열의 첫 번째 문자를 대문자로 변경합니다</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #795E26">upperFirstLetter</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;fred&#039;</span><span style="color: #000000">); </span><span style="color: #008000">// Fred</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>text: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -3825,6 +4095,9 @@
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#averageBy" class="tsd-kind-icon">average<wbr>By</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#camelCase" class="tsd-kind-icon">camel<wbr>Case</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#castArray" class="tsd-kind-icon">cast<wbr>Array</a>
 					</li>
@@ -3994,6 +4267,9 @@
 						<a href="Temen.html#isTypedArray" class="tsd-kind-icon">is<wbr>Typed<wbr>Array</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#lowerFirstLetter" class="tsd-kind-icon">lower<wbr>First<wbr>Letter</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#max" class="tsd-kind-icon">max</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
@@ -4004,6 +4280,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#minBy" class="tsd-kind-icon">min<wbr>By</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#parscalCase" class="tsd-kind-icon">parscal<wbr>Case</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#parseQueryString" class="tsd-kind-icon">parse<wbr>Query<wbr>String</a>
@@ -4023,6 +4302,15 @@
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#sumBy" class="tsd-kind-icon">sum<wbr>By</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#trimCharacters" class="tsd-kind-icon">trim<wbr>Characters</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#trimEndCharacters" class="tsd-kind-icon">trim<wbr>End<wbr>Characters</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#trimStartCharacters" class="tsd-kind-icon">trim<wbr>Start<wbr>Characters</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#uniq" class="tsd-kind-icon">uniq</a>
 					</li>
@@ -4031,6 +4319,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#unzip" class="tsd-kind-icon">unzip</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#upperFirstLetter" class="tsd-kind-icon">upper<wbr>First<wbr>Letter</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="Temen.html#zip" class="tsd-kind-icon">zip</a>
