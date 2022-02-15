@@ -145,8 +145,11 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#isEqual" class="tsd-kind-icon">is<wbr>Equal</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="Temen.html#isEqualWith" class="tsd-kind-icon">is<wbr>Equal<wbr>With</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isError" class="tsd-kind-icon">is<wbr>Error</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isFinite" class="tsd-kind-icon">is<wbr>Finite</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isFunction" class="tsd-kind-icon">is<wbr>Function</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isInteger" class="tsd-kind-icon">is<wbr>Integer</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isMap" class="tsd-kind-icon">is<wbr>Map</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isMatch" class="tsd-kind-icon">is<wbr>Match</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isNil" class="tsd-kind-icon">is<wbr>Nil</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isNumber" class="tsd-kind-icon">is<wbr>Number</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isObjectLike" class="tsd-kind-icon">is<wbr>Object<wbr>Like</a></li>
@@ -2658,6 +2661,56 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isFinite" class="tsd-anchor"></a>
+					<h3>is<wbr>Finite</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Finite<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isFinite/index.ts#L21">temen/src/isFinite/index.ts:21</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>value가 유한한 숫자인지 확인합니다.</p>
+									<ul>
+										<li><strong>Note:</strong> 이 함수는 <code>Number.isFinite</code>를 사용합니다.
+										<a href="https://mdn.io/Number/isFinite"><code>Number.isFinite</code></a>.</li>
+									</ul>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #795E26">isFinite</span><span style="color: #000000">(</span><span style="color: #098658">3</span><span style="color: #000000">);</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isFinite</span><span style="color: #000000">(</span><span style="color: #267F99">Number</span><span style="color: #000000">.MIN_VALUE);</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isFinite</span><span style="color: #000000">(</span><span style="color: #0000FF">Infinity</span><span style="color: #000000">);</span>
+<span style="color: #008000">// =&gt; false</span>
+
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>확인할 값</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>value가 유한한 숫자이면 <code>true</code> 아니면 <code>false</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="isFunction" class="tsd-anchor"></a>
 					<h3>is<wbr>Function</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -2713,6 +2766,51 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isInteger" class="tsd-anchor"></a>
+					<h3>is<wbr>Integer</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Integer<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isInteger/index.ts#L19">temen/src/isInteger/index.ts:19</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>value가 정수인지 확인합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #795E26">isInteger</span><span style="color: #000000">(</span><span style="color: #098658">3</span><span style="color: #000000">);</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isInteger</span><span style="color: #000000">(</span><span style="color: #267F99">Number</span><span style="color: #000000">.MIN_VALUE);</span>
+<span style="color: #008000">// =&gt; false</span>
+
+<span style="color: #795E26">isInteger</span><span style="color: #000000">(</span><span style="color: #0000FF">Infinity</span><span style="color: #000000">);</span>
+<span style="color: #008000">// =&gt; false</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>확인 할 값</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>value가 정수이면 <code>true</code> 아니면 <code>false</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="isMap" class="tsd-anchor"></a>
 					<h3>is<wbr>Map</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -2744,6 +2842,32 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isMatch" class="tsd-anchor"></a>
+					<h3>is<wbr>Match</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Match<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isMatch/index.ts#L20">temen/src/isMatch/index.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <span class="tsd-signature-type">ObjectType</span></h5>
+								</li>
+								<li>
+									<h5>source: <span class="tsd-signature-type">ObjectType</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -4237,10 +4361,19 @@
 						<a href="Temen.html#isError" class="tsd-kind-icon">is<wbr>Error</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isFinite" class="tsd-kind-icon">is<wbr>Finite</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#isFunction" class="tsd-kind-icon">is<wbr>Function</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isInteger" class="tsd-kind-icon">is<wbr>Integer</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#isMap" class="tsd-kind-icon">is<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isMatch" class="tsd-kind-icon">is<wbr>Match</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#isNil" class="tsd-kind-icon">is<wbr>Nil</a>
