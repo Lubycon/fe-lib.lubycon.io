@@ -76,6 +76,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#LoggingClick" class="tsd-kind-icon">Logging<wbr>Click</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#LoggingEvent" class="tsd-kind-icon">Logging<wbr>Event</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#LoggingImpression" class="tsd-kind-icon">Logging<wbr>Impression</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#SSRSuspense" class="tsd-kind-icon">SSRSuspense</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useAnimationFrame" class="tsd-kind-icon">use<wbr>Animation<wbr>Frame</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useAsyncEffect" class="tsd-kind-icon">use<wbr>Async<wbr>Effect</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useBindInput" class="tsd-kind-icon">use<wbr>Bind<wbr>Input</a></li>
@@ -98,6 +99,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useUpload" class="tsd-kind-icon">use<wbr>Upload</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useWillUnmount" class="tsd-kind-icon">use<wbr>Will<wbr>Unmount</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useWindowSize" class="tsd-kind-icon">use<wbr>Window<wbr>Size</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="React.html#withSSRSuspense" class="tsd-kind-icon">withSSRSuspense</a></li>
 							</ul>
 							<h3>hooks Functions</h3>
 							<ul class="tsd-index-list">
@@ -258,6 +260,42 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>__namedParameters: <span class="tsd-signature-type">Props</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="SSRSuspense" class="tsd-anchor"></a>
+					<h3>SSRSuspense</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">SSRSuspense<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ComponentProps</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Suspense</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/react/src/components/SSRSuspense.tsx#L14">react/src/components/SSRSuspense.tsx:14</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>SSR 환경에서는 fallback를 렌더하고, CSR 환경에서는 Suspsense를 렌더하는 컴포넌트입니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-jsx"><span style="color: #800000">&lt;</span><span style="color: #267F99">SSRSuspense</span><span style="color: #000000"> </span><span style="color: #FF0000">fallback</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #800000">&lt;</span><span style="color: #267F99">Fallback</span><span style="color: #000000FF"> </span><span style="color: #800000">/&gt;</span><span style="color: #0000FF">}</span><span style="color: #800000">&gt;</span>
+<span style="color: #000000">  </span><span style="color: #800000">&lt;</span><span style="color: #267F99">MyPage</span><span style="color: #000000"> </span><span style="color: #800000">/&gt;</span>
+<span style="color: #800000">&lt;/</span><span style="color: #267F99">SSRSuspense</span><span style="color: #800000">&gt;</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-type">ComponentProps</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Suspense</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
@@ -1470,6 +1508,72 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="withSSRSuspense" class="tsd-anchor"></a>
+					<h3>withSSRSuspense</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">withSSRSuspense&lt;T&gt;<span class="tsd-signature-symbol">(</span>WrappedComponent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ComponentType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>fallback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">NonNullable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReactNode</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Element</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/react/src/components/SSRSuspense.tsx#L35">react/src/components/SSRSuspense.tsx:35</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>SSRSuspense를 HoC로 사용할 수 있는 함수입니다</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #AF00DB">default</span><span style="color: #000000"> </span><span style="color: #795E26">withSSRSuspense</span><span style="color: #000000">(&lt;</span><span style="color: #267F99">MyPage</span><span style="color: #000000"> /&gt;, { </span><span style="color: #001080">fallback:</span><span style="color: #000000"> &lt;</span><span style="color: #267F99">Fallback</span><span style="color: #000000"> /&gt; });</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>WrappedComponent: <span class="tsd-signature-type">ComponentType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>fallback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">NonNullable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReactNode</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>fallback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">NonNullable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReactNode</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Element</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-signature">
+									<ul class="tsd-signatures tsd-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>props: <span class="tsd-signature-type">T</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>hooks Functions</h2>
@@ -1593,6 +1697,9 @@
 						<a href="React.html#LoggingImpression" class="tsd-kind-icon">Logging<wbr>Impression</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="React.html#SSRSuspense" class="tsd-kind-icon">SSRSuspense</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="React.html#useAnimationFrame" class="tsd-kind-icon">use<wbr>Animation<wbr>Frame</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
@@ -1660,6 +1767,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="React.html#useWindowSize" class="tsd-kind-icon">use<wbr>Window<wbr>Size</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="React.html#withSSRSuspense" class="tsd-kind-icon">withSSRSuspense</a>
 					</li>
 				</ul>
 			</nav>
