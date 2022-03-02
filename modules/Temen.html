@@ -151,8 +151,11 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isMap" class="tsd-kind-icon">is<wbr>Map</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isMatch" class="tsd-kind-icon">is<wbr>Match</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isNil" class="tsd-kind-icon">is<wbr>Nil</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isNull" class="tsd-kind-icon">is<wbr>Null</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isNumber" class="tsd-kind-icon">is<wbr>Number</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isObject" class="tsd-kind-icon">is<wbr>Object</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isObjectLike" class="tsd-kind-icon">is<wbr>Object<wbr>Like</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isPlainObject" class="tsd-kind-icon">is<wbr>Plain<wbr>Object</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isPrimitiveType" class="tsd-kind-icon">is<wbr>Primitive<wbr>Type</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isRegExp" class="tsd-kind-icon">is<wbr>Reg<wbr>Exp</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="Temen.html#isSet" class="tsd-kind-icon">is<wbr>Set</a></li>
@@ -579,16 +582,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/clone/index.ts#L13">temen/src/clone/index.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/clone/index.ts#L14">temen/src/clone/index.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><p>const objects = [{ &#39;a&#39;: 1 }, { &#39;b&#39;: 2 }]</p>
-										<p>const shallow = clone(objects)
-											console.log(shallow[0] === objects[0])
-										// =&gt; true</p>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">objects</span><span style="color: #000000"> = [{ </span><span style="color: #A31515">&#039;a&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> }, { </span><span style="color: #A31515">&#039;b&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">2</span><span style="color: #000000"> }]</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">shallow</span><span style="color: #000000"> = </span><span style="color: #795E26">clone</span><span style="color: #000000">(</span><span style="color: #001080">objects</span><span style="color: #000000">)</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">shallow</span><span style="color: #000000">[</span><span style="color: #098658">0</span><span style="color: #000000">] === </span><span style="color: #001080">objects</span><span style="color: #000000">[</span><span style="color: #098658">0</span><span style="color: #000000">])</span>
+<span style="color: #008000">// =&gt; true</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -625,6 +630,21 @@
 									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/cloneDeep/index.ts#L52">temen/src/cloneDeep/index.ts:52</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>오브젝트를 깊은 복사합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">objects</span><span style="color: #000000"> = [{ </span><span style="color: #A31515">&#039;a&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> }, { </span><span style="color: #A31515">&#039;b&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">2</span><span style="color: #000000"> }]</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">deep</span><span style="color: #000000"> = </span><span style="color: #795E26">cloneDeep</span><span style="color: #000000">(</span><span style="color: #001080">objects</span><span style="color: #000000">)</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">deep</span><span style="color: #000000">[</span><span style="color: #098658">0</span><span style="color: #000000">] === </span><span style="color: #001080">objects</span><span style="color: #000000">[</span><span style="color: #098658">0</span><span style="color: #000000">])</span>
+<span style="color: #008000">// =&gt; false</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
@@ -635,9 +655,13 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>value: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>복제 할 값</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<p>복제 된 값</p>
 						</li>
 					</ul>
 				</section>
@@ -736,7 +760,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/cloneWith/index.ts#L28">temen/src/cloneWith/index.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/cloneWith/index.ts#L29">temen/src/cloneWith/index.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -749,18 +773,21 @@
 									<dd><p>cloneDeepWith</p>
 									</dd>
 									<dt>example</dt>
-									<dd><p>function customizer(value) {
-											if (isElement(value)) {
-											return value.cloneNode(false)
-											}
-										}</p>
-										<p>const el = cloneWith(document.body, customizer)</p>
-										<p>console.log(el === document.body)
-											// =&gt; false
-											console.log(el.nodeName)
-											// =&gt; &#39;BODY&#39;
-											console.log(el.childNodes.length)
-										// =&gt; 0</p>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">customizer</span><span style="color: #000000">(</span><span style="color: #001080">value</span><span style="color: #000000">) {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #795E26">isElement</span><span style="color: #000000">(</span><span style="color: #001080">value</span><span style="color: #000000">)) {</span>
+<span style="color: #000000">    </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">value</span><span style="color: #000000">.</span><span style="color: #795E26">cloneNode</span><span style="color: #000000">(</span><span style="color: #0000FF">false</span><span style="color: #000000">)</span>
+<span style="color: #000000">  }</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">el</span><span style="color: #000000"> = </span><span style="color: #795E26">cloneWith</span><span style="color: #000000">(</span><span style="color: #001080">document</span><span style="color: #000000">.</span><span style="color: #001080">body</span><span style="color: #000000">, </span><span style="color: #001080">customizer</span><span style="color: #000000">)</span>
+
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">el</span><span style="color: #000000"> === </span><span style="color: #001080">document</span><span style="color: #000000">.</span><span style="color: #001080">body</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; false</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">el</span><span style="color: #000000">.</span><span style="color: #001080">nodeName</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; &#039;BODY&#039;</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">el</span><span style="color: #000000">.</span><span style="color: #001080">childNodes</span><span style="color: #000000">.</span><span style="color: #001080">length</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; 0</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1148,7 +1175,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/promise/index.ts#L29">temen/src/promise/index.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/promise/index.ts#L31">temen/src/promise/index.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1157,18 +1184,21 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><p>const {
-											promise: sdkLoadPromise,
-											resolve: sdkLoadPromiseResolver
-										} = defer();</p>
-										<p>async function call() {
-											const isLoaded = await sdkLoadPromise;
-											console.log(&#39;SDK 로딩 완료&#39;);
-										}</p>
-										<p>function completeLoading () {
-											// 로딩 중....
-											sdkLoadPromiseResolver(true);
-										}</p>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #001080">promise</span><span style="color: #000000">: </span><span style="color: #0070C1">sdkLoadPromise</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">resolve</span><span style="color: #000000">: </span><span style="color: #0070C1">sdkLoadPromiseResolver</span>
+<span style="color: #000000">} = </span><span style="color: #795E26">defer</span><span style="color: #000000">();</span>
+
+<span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">call</span><span style="color: #000000">() {</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">isLoaded</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">sdkLoadPromise</span><span style="color: #000000">;</span>
+<span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;SDK 로딩 완료&#039;</span><span style="color: #000000">);</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">completeLoading</span><span style="color: #000000"> () {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// 로딩 중....</span>
+<span style="color: #000000">  </span><span style="color: #795E26">sdkLoadPromiseResolver</span><span style="color: #000000">(</span><span style="color: #0000FF">true</span><span style="color: #000000">);</span>
+<span style="color: #000000">}</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2091,7 +2121,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/date/index.ts#L23">temen/src/date/index.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/date/index.ts#L27">temen/src/date/index.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2100,8 +2130,9 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><p>isAfterOrEqual(new Date(2021, 8, 9), new Date(2021, 8, 9)); // true
-										isAfterOrEqual(new Date(2021, 8, 31), new Date(2021, 8, 9)); // true</p>
+									<dd><pre><code class="language-js"><span style="color: #795E26">isAfterOrEqual</span><span style="color: #000000">(</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(</span><span style="color: #098658">2021</span><span style="color: #000000">, </span><span style="color: #098658">8</span><span style="color: #000000">, </span><span style="color: #098658">9</span><span style="color: #000000">), </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(</span><span style="color: #098658">2021</span><span style="color: #000000">, </span><span style="color: #098658">8</span><span style="color: #000000">, </span><span style="color: #098658">9</span><span style="color: #000000">)); </span><span style="color: #008000">// true</span>
+<span style="color: #795E26">isAfterOrEqual</span><span style="color: #000000">(</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(</span><span style="color: #098658">2021</span><span style="color: #000000">, </span><span style="color: #098658">8</span><span style="color: #000000">, </span><span style="color: #098658">31</span><span style="color: #000000">), </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(</span><span style="color: #098658">2021</span><span style="color: #000000">, </span><span style="color: #098658">8</span><span style="color: #000000">, </span><span style="color: #098658">9</span><span style="color: #000000">)); </span><span style="color: #008000">// true</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2291,7 +2322,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/date/index.ts#L12">temen/src/date/index.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/date/index.ts#L14">temen/src/date/index.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2300,8 +2331,9 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><p>isBeforeOrEqual(new Date(2021, 8, 9), new Date(2021, 8, 9)); // true
-										isBeforeOrEqual(new Date(2021, 8, 1), new Date(2021, 8, 9)); // true</p>
+									<dd><pre><code class="language-js"><span style="color: #795E26">isBeforeOrEqual</span><span style="color: #000000">(</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(</span><span style="color: #098658">2021</span><span style="color: #000000">, </span><span style="color: #098658">8</span><span style="color: #000000">, </span><span style="color: #098658">9</span><span style="color: #000000">), </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(</span><span style="color: #098658">2021</span><span style="color: #000000">, </span><span style="color: #098658">8</span><span style="color: #000000">, </span><span style="color: #098658">9</span><span style="color: #000000">)); </span><span style="color: #008000">// true</span>
+<span style="color: #795E26">isBeforeOrEqual</span><span style="color: #000000">(</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(</span><span style="color: #098658">2021</span><span style="color: #000000">, </span><span style="color: #098658">8</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">), </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(</span><span style="color: #098658">2021</span><span style="color: #000000">, </span><span style="color: #098658">8</span><span style="color: #000000">, </span><span style="color: #098658">9</span><span style="color: #000000">)); </span><span style="color: #008000">// true</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2629,7 +2661,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isError/index.ts#L16">temen/src/isError/index.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isError/index.ts#L17">temen/src/isError/index.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2639,10 +2671,12 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><p>isError(new Error)
-										// =&gt; true</p>
-										<p>isError(Error)
-										// =&gt; false</p>
+									<dd><pre><code class="language-js"><span style="color: #795E26">isError</span><span style="color: #000000">(</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Error</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #795E26">isError</span><span style="color: #000000">(</span><span style="color: #267F99">Error</span><span style="color: #000000">)</span>
+<span style="color: #008000">// =&gt; false</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2908,6 +2942,56 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isNull" class="tsd-anchor"></a>
+					<h3>is<wbr>Null</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Null<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">null</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isNull/index.ts#L26">temen/src/isNull/index.ts:26</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>value가 안전한 정수인지 확인합니다.</p>
+								</div>
+								<p><strong>Note:</strong> 이 메소드 아래 메소드를 사용합니다.
+								<a href="https://mdn.io/Number/isSafeInteger"><code>Number.isSafeInteger</code></a>.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isSafeInteger</span><span style="color: #000000">(</span><span style="color: #098658">3</span><span style="color: #000000">);</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isSafeInteger</span><span style="color: #000000">(</span><span style="color: #267F99">Number</span><span style="color: #000000">.MIN_VALUE);</span>
+<span style="color: #008000">// =&gt; false</span>
+
+<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isSafeInteger</span><span style="color: #000000">(</span><span style="color: #0000FF">Infinity</span><span style="color: #000000">);</span>
+<span style="color: #008000">// =&gt; false</span>
+
+<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isSafeInteger</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;3&#039;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// =&gt; false</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>확인할 값</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">null</span></h4>
+							<p>만약 value가 안전한 정수라면 <code>true</code>를, 그렇지 않다면 <code>false</code>를 반환합니다.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="isNumber" class="tsd-anchor"></a>
 					<h3>is<wbr>Number</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -2938,6 +3022,52 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isObject" class="tsd-anchor"></a>
+					<h3>is<wbr>Object</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Object<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isObject/index.ts#L21">temen/src/isObject/index.ts:21</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>value가 오브젝트의 <a href="http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types">언어타입</a>인지 확인합니다.
+									(e.g. arrays, functions, objects, regexes, <code>new Number(0)</code>, and <code>new String(&#39;&#39;)</code>)</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isObject</span><span style="color: #000000">({});</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isObject</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]);</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isObject</span><span style="color: #000000">(</span><span style="color: #0000FF">null</span><span style="color: #000000">);</span>
+<span style="color: #008000">// =&gt; false</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>확인할 값</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>만약 value가 오브젝트이면 <code>true</code>를, 그렇지 않다면 <code>false</code>를 반환합니다.</p>
 						</li>
 					</ul>
 				</section>
@@ -2987,6 +3117,56 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 							<p>object-like이면 true 반환 아닌 경우 false 반환</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isPlainObject" class="tsd-anchor"></a>
+					<h3>is<wbr>Plain<wbr>Object</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Plain<wbr>Object<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/isPlainObject/index.ts#L27">temen/src/isPlainObject/index.ts:27</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>value가 plane object 인지 확인합니다.
+									(e.g. <code>Object</code> 생성자로부터 생성된 오브젝트, <code>[[Prototype]]</code>이 <code>null</code>인 오브젝트)</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-js"><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">Foo</span><span style="color: #000000">() {</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #001080">a</span><span style="color: #000000"> = </span><span style="color: #098658">1</span><span style="color: #000000">;</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isPlainObject</span><span style="color: #000000">(</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">Foo</span><span style="color: #000000">);</span>
+<span style="color: #008000">// =&gt; false</span>
+
+<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isPlainObject</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]);</span>
+<span style="color: #008000">// =&gt; false</span>
+
+<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isPlainObject</span><span style="color: #000000">({ </span><span style="color: #A31515">&#039;x&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;y&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000"> });</span>
+<span style="color: #008000">// =&gt; true</span>
+
+<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isPlainObject</span><span style="color: #000000">(</span><span style="color: #267F99">Object</span><span style="color: #000000">.</span><span style="color: #795E26">create</span><span style="color: #000000">(</span><span style="color: #0000FF">null</span><span style="color: #000000">));</span>
+<span style="color: #008000">// =&gt; true</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>만약 value가 plane object라면 <code>true</code>를, 그렇지 않다면 <code>false</code>를 반환합니다.</p>
 						</li>
 					</ul>
 				</section>
@@ -3448,7 +3628,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/queryString/index.ts#L35">temen/src/queryString/index.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/queryString/index.ts#L37">temen/src/queryString/index.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3532,7 +3712,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/promise/index.ts#L53">temen/src/promise/index.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/promise/index.ts#L57">temen/src/promise/index.ts:57</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3541,9 +3721,10 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><p>console.log(&#39;슬립 시작&#39;);
-											await sleep(1000);
-										console.log(&#39;1초 지남&#39;);</p>
+									<dd><pre><code class="language-js"><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;슬립 시작&#039;</span><span style="color: #000000">);</span>
+<span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">sleep</span><span style="color: #000000">(</span><span style="color: #098658">1000</span><span style="color: #000000">);</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;1초 지남&#039;</span><span style="color: #000000">);</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -3567,7 +3748,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/queryString/index.ts#L14">temen/src/queryString/index.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/temen/src/queryString/index.ts#L16">temen/src/queryString/index.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3576,10 +3757,12 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><p>stringifyQueryParams({ foo: true, bar: &#39;hello&#39;, baz: &#39;안녕&#39; });
-										// &#39;?foo=true&amp;bar=hello&amp;%EC%95%88%EB%85%95&#39;</p>
-										<p>stringifyQueryParams({ foo: undefined });
-										// &#39;&#39;</p>
+									<dd><pre><code class="language-js"><span style="color: #795E26">stringifyQueryParams</span><span style="color: #000000">({ </span><span style="color: #001080">foo:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">, </span><span style="color: #001080">bar:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;hello&#039;</span><span style="color: #000000">, </span><span style="color: #001080">baz:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;안녕&#039;</span><span style="color: #000000"> });</span>
+<span style="color: #008000">// &#039;?foo=true&amp;bar=hello&amp;%EC%95%88%EB%85%95&#039;</span>
+
+<span style="color: #795E26">stringifyQueryParams</span><span style="color: #000000">({ </span><span style="color: #001080">foo:</span><span style="color: #000000"> </span><span style="color: #0000FF">undefined</span><span style="color: #000000"> });</span>
+<span style="color: #008000">// &#039;&#039;</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -4379,10 +4562,19 @@
 						<a href="Temen.html#isNil" class="tsd-kind-icon">is<wbr>Nil</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isNull" class="tsd-kind-icon">is<wbr>Null</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#isNumber" class="tsd-kind-icon">is<wbr>Number</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isObject" class="tsd-kind-icon">is<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#isObjectLike" class="tsd-kind-icon">is<wbr>Object<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="Temen.html#isPlainObject" class="tsd-kind-icon">is<wbr>Plain<wbr>Object</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="Temen.html#isPrimitiveType" class="tsd-kind-icon">is<wbr>Primitive<wbr>Type</a>
