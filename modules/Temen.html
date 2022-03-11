@@ -2962,16 +2962,16 @@
 								<a href="https://mdn.io/Number/isSafeInteger"><code>Number.isSafeInteger</code></a>.</p>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isSafeInteger</span><span style="color: #000000">(</span><span style="color: #098658">3</span><span style="color: #000000">);</span>
+									<dd><pre><code class="language-js"><span style="color: #795E26">isSafeInteger</span><span style="color: #000000">(</span><span style="color: #098658">3</span><span style="color: #000000">);</span>
 <span style="color: #008000">// =&gt; true</span>
 
-<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isSafeInteger</span><span style="color: #000000">(</span><span style="color: #267F99">Number</span><span style="color: #000000">.MIN_VALUE);</span>
+<span style="color: #795E26">isSafeInteger</span><span style="color: #000000">(</span><span style="color: #267F99">Number</span><span style="color: #000000">.MIN_VALUE);</span>
 <span style="color: #008000">// =&gt; false</span>
 
-<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isSafeInteger</span><span style="color: #000000">(</span><span style="color: #0000FF">Infinity</span><span style="color: #000000">);</span>
+<span style="color: #795E26">isSafeInteger</span><span style="color: #000000">(</span><span style="color: #0000FF">Infinity</span><span style="color: #000000">);</span>
 <span style="color: #008000">// =&gt; false</span>
 
-<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isSafeInteger</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;3&#039;</span><span style="color: #000000">);</span>
+<span style="color: #795E26">isSafeInteger</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;3&#039;</span><span style="color: #000000">);</span>
 <span style="color: #008000">// =&gt; false</span>
 </code></pre>
 									</dd>
@@ -3045,13 +3045,13 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-js"><span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isObject</span><span style="color: #000000">({});</span>
+									<dd><pre><code class="language-js"><span style="color: #795E26">isObject</span><span style="color: #000000">({});</span>
 <span style="color: #008000">// =&gt; true</span>
 
-<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isObject</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]);</span>
+<span style="color: #795E26">isObject</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]);</span>
 <span style="color: #008000">// =&gt; true</span>
 
-<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isObject</span><span style="color: #000000">(</span><span style="color: #0000FF">null</span><span style="color: #000000">);</span>
+<span style="color: #795E26">isObject</span><span style="color: #000000">(</span><span style="color: #0000FF">null</span><span style="color: #000000">);</span>
 <span style="color: #008000">// =&gt; false</span>
 </code></pre>
 									</dd>
@@ -3144,16 +3144,16 @@
 <span style="color: #000000">  </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #001080">a</span><span style="color: #000000"> = </span><span style="color: #098658">1</span><span style="color: #000000">;</span>
 <span style="color: #000000">}</span>
 
-<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isPlainObject</span><span style="color: #000000">(</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">Foo</span><span style="color: #000000">);</span>
+<span style="color: #795E26">isPlainObject</span><span style="color: #000000">(</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">Foo</span><span style="color: #000000">);</span>
 <span style="color: #008000">// =&gt; false</span>
 
-<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isPlainObject</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]);</span>
+<span style="color: #795E26">isPlainObject</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]);</span>
 <span style="color: #008000">// =&gt; false</span>
 
-<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isPlainObject</span><span style="color: #000000">({ </span><span style="color: #A31515">&#039;x&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;y&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000"> });</span>
+<span style="color: #795E26">isPlainObject</span><span style="color: #000000">({ </span><span style="color: #A31515">&#039;x&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;y&#039;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000"> });</span>
 <span style="color: #008000">// =&gt; true</span>
 
-<span style="color: #001080">_</span><span style="color: #000000">.</span><span style="color: #795E26">isPlainObject</span><span style="color: #000000">(</span><span style="color: #267F99">Object</span><span style="color: #000000">.</span><span style="color: #795E26">create</span><span style="color: #000000">(</span><span style="color: #0000FF">null</span><span style="color: #000000">));</span>
+<span style="color: #795E26">isPlainObject</span><span style="color: #000000">(</span><span style="color: #267F99">Object</span><span style="color: #000000">.</span><span style="color: #795E26">create</span><span style="color: #000000">(</span><span style="color: #0000FF">null</span><span style="color: #000000">));</span>
 <span style="color: #008000">// =&gt; true</span>
 </code></pre>
 									</dd>
