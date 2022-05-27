@@ -85,6 +85,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="React.html#useCombinedRefs" class="tsd-kind-icon">use<wbr>Combined<wbr>Refs</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="React.html#useDebounce" class="tsd-kind-icon">use<wbr>Debounce</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useDetectEscapeKey" class="tsd-kind-icon">use<wbr>Detect<wbr>Escape<wbr>Key</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useDetectKeyPress" class="tsd-kind-icon">use<wbr>Detect<wbr>Key<wbr>Press</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useDidMount" class="tsd-kind-icon">use<wbr>Did<wbr>Mount</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useDidUpdate" class="tsd-kind-icon">use<wbr>Did<wbr>Update</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useElementSize" class="tsd-kind-icon">use<wbr>Element<wbr>Size</a></li>
@@ -754,20 +755,78 @@
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>esc 키를 눌렀을 때 true인 상태를 반환합니다.</p>
+									<p>Escape 키가 눌렸을 때 true 반환</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">isEscapeKeyPressed</span><span style="color: #000000"> = </span><span style="color: #795E26">useDetectEscapeKey</span><span style="color: #000000">();</span>
 
-<span style="color: #795E26">useEffect</span><span style="color: #000000">(()</span><span style="color: #0000FF">=&gt;</span><span style="color: #000000">{</span>
-<span style="color: #000000">  </span><span style="color: #AF00DB">if</span><span style="color: #000000">(</span><span style="color: #001080">isEscapeKeyPressed</span><span style="color: #000000">) </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;pressed esc&quot;</span><span style="color: #000000">);</span>
-<span style="color: #000000">},[</span><span style="color: #001080">isEscapeKeyPressed</span><span style="color: #000000">])</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">isEscapeKeyPressed</span><span style="color: #000000">); </span><span style="color: #008000">// Escape 키가 눌렸을 때 true 출력</span>
 </code></pre>
 									</dd>
 								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Escape 키가 눌렸을 때 true</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="useDetectKeyPress" class="tsd-anchor"></a>
+					<h3>use<wbr>Detect<wbr>Key<wbr>Press</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">use<wbr>Detect<wbr>Key<wbr>Press<span class="tsd-signature-symbol">(</span>targetKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">KeyCode</span>, callback<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/react/src/hooks/useDetectKeyPress.ts#L20">react/src/hooks/useDetectKeyPress.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>첫 번째 매개변수로 전달된 키가 눌렸을 때 키(상태) 값을 반환합니다.
+									두 번째 매개변수로 전달된 함수는 전달된 키가 눌렸을 때 함수를 호출합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">pressedKey</span><span style="color: #000000"> = </span><span style="color: #795E26">useDetectKeyPress</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Escape&#039;</span><span style="color: #000000">, </span><span style="color: #001080">callback</span><span style="color: #000000">);</span>
+
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">pressedKey</span><span style="color: #000000">); </span><span style="color: #008000">// Escape 키가 눌렸을 때 Escape 출력</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> targetKey: <span class="tsd-signature-type">KeyCode</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>눌렸을 때 반환할 키 값</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>눌렸을 때 실행할 함수</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>눌렸을 때 반환할 키 값</p>
 						</li>
 					</ul>
 				</section>
@@ -1758,6 +1817,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="React.html#useDetectEscapeKey" class="tsd-kind-icon">use<wbr>Detect<wbr>Escape<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="React.html#useDetectKeyPress" class="tsd-kind-icon">use<wbr>Detect<wbr>Key<wbr>Press</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="React.html#useDidMount" class="tsd-kind-icon">use<wbr>Did<wbr>Mount</a>
