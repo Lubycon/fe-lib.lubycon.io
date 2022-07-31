@@ -76,6 +76,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#LoggingClick" class="tsd-kind-icon">Logging<wbr>Click</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#LoggingEvent" class="tsd-kind-icon">Logging<wbr>Event</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#LoggingImpression" class="tsd-kind-icon">Logging<wbr>Impression</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#OverlayProvider" class="tsd-kind-icon">Overlay<wbr>Provider</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#SSRSuspense" class="tsd-kind-icon">SSRSuspense</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useAnimationFrame" class="tsd-kind-icon">use<wbr>Animation<wbr>Frame</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useAsyncEffect" class="tsd-kind-icon">use<wbr>Async<wbr>Effect</a></li>
@@ -93,6 +94,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="React.html#useInfiniteScroll" class="tsd-kind-icon">use<wbr>Infinite<wbr>Scroll</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useInterval" class="tsd-kind-icon">use<wbr>Interval</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="React.html#useLocalStorage" class="tsd-kind-icon">use<wbr>Local<wbr>Storage</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useOverlay" class="tsd-kind-icon">use<wbr>Overlay</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useOverlayArea" class="tsd-kind-icon">use<wbr>Overlay<wbr>Area</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="React.html#usePreviousState" class="tsd-kind-icon">use<wbr>Previous<wbr>State</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="React.html#useQueryParam" class="tsd-kind-icon">use<wbr>Query<wbr>Param</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="React.html#useResizeObserver" class="tsd-kind-icon">use<wbr>Resize<wbr>Observer</a></li>
@@ -262,6 +265,29 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>__namedParameters: <span class="tsd-signature-type">Props</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="OverlayProvider" class="tsd-anchor"></a>
+					<h3>Overlay<wbr>Provider</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">Overlay<wbr>Provider<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PropsWithChildren</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/react/src/hooks/useOverlay/OverlayContext.tsx#L22">react/src/hooks/useOverlay/OverlayContext.tsx:22</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-type">PropsWithChildren</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span></h4>
@@ -1188,6 +1214,100 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="useOverlay" class="tsd-anchor"></a>
+					<h3>use<wbr>Overlay</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">use<wbr>Overlay<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>close<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>controller<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OverlayController</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/react/src/hooks/useOverlay/useOverlay.tsx#L27">react/src/hooks/useOverlay/useOverlay.tsx:27</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>선언적으로 사용해야하는 컴포넌트를 open, close와 같은 함수로 열고 닫을 수 있도록 도와주는 유틸성 Hooks입니다.
+									하나의 useOverlay는 고유한 ID를 가진 오버레이를 생성하고, open 함수에 인자로 받은 컴포넌트를 이 오버레이에 렌더합니다.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-tsx"><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">MyComponent</span><span style="color: #000000">() {</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">open</span><span style="color: #000000"> } = </span><span style="color: #795E26">useOverlay</span><span style="color: #000000">();</span>
+
+<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">openMyModal</span><span style="color: #000000"> = () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #795E26">open</span><span style="color: #000000">(({ </span><span style="color: #001080">isOpen</span><span style="color: #000000">, </span><span style="color: #001080">close</span><span style="color: #000000"> }) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> (</span>
+<span style="color: #000000">      </span><span style="color: #800000">&lt;</span><span style="color: #267F99">MyModal</span><span style="color: #000000"> </span><span style="color: #FF0000">open</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #001080">isOpen</span><span style="color: #0000FF">}</span><span style="color: #000000"> </span><span style="color: #FF0000">onClose</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #001080">close</span><span style="color: #0000FF">}</span><span style="color: #000000"> </span><span style="color: #800000">/&gt;</span>
+<span style="color: #000000">    ))</span>
+<span style="color: #000000">  };</span>
+
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #800000">&lt;button</span><span style="color: #000000"> </span><span style="color: #FF0000">onClick</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #001080">openMyModal</span><span style="color: #0000FF">}</span><span style="color: #800000">&gt;</span><span style="color: #000000">모달열기</span><span style="color: #800000">&lt;/button&gt;</span>
+<span style="color: #000000">}</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>close<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>controller<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OverlayController</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>close<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="tsd-parameter">
+									<h5>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>controller<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OverlayController</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>controller<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OverlayController</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>controller: <span class="tsd-signature-type">OverlayController</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="useOverlayArea" class="tsd-anchor"></a>
+					<h3>use<wbr>Overlay<wbr>Area</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">use<wbr>Overlay<wbr>Area<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OverlayValues</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Lubycon/lubycon-frontend-libraries/blob/main/packages/react/src/hooks/useOverlay/OverlayContext.tsx#L61">react/src/hooks/useOverlay/OverlayContext.tsx:61</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">OverlayValues</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<a name="usePreviousState" class="tsd-anchor"></a>
 					<h3>use<wbr>Previous<wbr>State</h3>
@@ -1800,6 +1920,9 @@
 						<a href="React.html#LoggingImpression" class="tsd-kind-icon">Logging<wbr>Impression</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="React.html#OverlayProvider" class="tsd-kind-icon">Overlay<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="React.html#SSRSuspense" class="tsd-kind-icon">SSRSuspense</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
@@ -1852,6 +1975,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="React.html#useLocalStorage" class="tsd-kind-icon">use<wbr>Local<wbr>Storage</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="React.html#useOverlay" class="tsd-kind-icon">use<wbr>Overlay</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="React.html#useOverlayArea" class="tsd-kind-icon">use<wbr>Overlay<wbr>Area</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="React.html#usePreviousState" class="tsd-kind-icon">use<wbr>Previous<wbr>State</a>
